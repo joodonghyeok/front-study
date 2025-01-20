@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--   
+    action : 어디로
+    method : 어떻게
+   -->
+
+   <!-- 
+     button의 type
+     submit (default) : form 전송
+     reset : form 데이터의 초기화
+     button : 단순하게 버튼의 용도 사용
+   -->
+
+    <form action="back-url">
+      <fieldset>
+        <legend>text , password</legend>
+        <div>
+          <span>아이디</span>
+          <input type="text" placeholder="아이디를 입력하세요" value="cmh506" name="memberId"/>
+          <!-- 카멜표기법을 사용하는 이유 : 벡엔드가 javascript이기 때문에 카멜의 사용했다. -->
+        </div>
+        <div>
+          <span>비밀번호</span>
+          <input type="password" placeholder="비밀번호를 입력하세요"/ name="memberPassword">
+        </div>
+
+        <div>
+          <textarea name="title" style="resize: none;" rows="4" cols="50"></textarea>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>datalist</legend>
+        <input type="text" name="studentDepartment" list="list" placeholder="학과명을 입력하세요">
+        <datalist id="list">
+          <option value="컴퓨터공학과"></option>
+          <option value="영어영문과"></option>
+          <option value="경영학과"></option>
+          <option value="사회체육과"></option>
+        </datalist>
+      </fieldset>
+
+      <fieldset>
+        <legend>radio</legend>
+        <p>
+          <label>
+            <span>선택안함</span><input name="gender" type="radio">
+          </label>
+          <label>
+            <span>여성</span><input name="gender" type="radio">
+          </label>
+          <label>
+            <span>남성</span><input name="gender" type="radio">
+          </label>
+          
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>checkbox</legend>
+        <label><span>영화감상</span><input type="checkbox" value="영화감상" name="hobby"></label>
+        <label><span>산책</span><input type="checkbox" value="산책" name="hobby"></label>
+        <label><span>먹기</span><input type="checkbox" value="먹기" name="hobby"></label>
+        <label><span>게임</span><input type="checkbox" value="게임" name="hobby"></label>
+        <label><span>노래</span><input type="checkbox" value="노래" name="hobby"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>select</legend>
+        <select name="major">
+          <option value="computer">컴퓨터공학과</option>
+          <option value="model">모델학과</option>
+          <option value="nurse">간호학과</option>
+          <option value="music">실용음악학과</option>
+        </select>
+      </fieldset>
+
+      <!-- 보통 button으로 사용한다. -->
+      <fieldset>
+        <legend>button</legend>
+        <input type="button" value="버튼">
+        <input type="reset" value="초기화">
+        <input type="submit" value="전송">
+
+      </fieldset>
+
+      <fieldset>
+        <legend>file</legend>
+        <input type="file">
+      </fieldset>
+
+      <fieldset>
+        <legend>other</legend>
+        <p>
+          색상 <input type="color">
+       </p>
+       <p>
+          이메일 <input type="email" style="width: 50px;">
+       </p>
+       <p>
+          웹 사이트 <input type="url">
+       </p>
+       <p>
+          연락처 <input type="tel">
+       </p>
+       <p>
+          날짜 <input type="datetime-local"><br>
+          날짜 <input type="date">
+       </p>
+       <p>
+          참여 인원 <input type="number" value="1" min="0" max="100" step="5">
+       </p>
+       <p>
+          단계(상, 중, 하) <input type="range" value="1" min="1" max="3">
+       </p>
+      </fieldset>
+
+
+    
+      <button type="submit">전송</button>
+    </form>
+</body>
+</html>

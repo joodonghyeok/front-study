@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a태그</title>
+</head>
+<body>
+  <!-- a : 하이퍼링크를 연결해주는 태그 -->
+
+   <!-- target 속성
+   _selt    : 현재 페이지 (기본값)
+   _blank   : 새 탭
+   아래 2개는 거의 사용하지 않는다 iframe은 너무 보안에 치명적인 부분이 있다.
+   _parent  : 부모페이지로 이동, iframe 사용시
+   _top     : 부모 페이지로 이동, iframe 사용시 -->
+
+  <!-- 타 웹사이트로 이동 -->
+   <a href="https://www.naver.com" target="_blank">a태그!</a>
+  
+   <!-- 외부 페이지로 이동 -->
+   <a href="./mail.html">메일로 이동</a>
+
+   <!-- 내부 페이지 내로 이동 -->
+   <!-- 아이디 속성을 #으로 표현한다. -->
+   <a href="#nav">페이지 내에서 이동(북마크)</a>
+   <div style="height: 5000px; background-color: green;">여기가 DIV</div>
+   <div id="nav"></div>
+
+</body>
+</html>
