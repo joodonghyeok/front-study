@@ -3,9 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>nth-child 선택하는 법</title>
+  <title>nth-child</title>
+
+  <style>
+
+    #container > li:nth-child(5) {
+      color: blue;
+    }
+
+    /* -n은 0이라고 생각하면 된다 */
+    #container > li:nth-child(-n + 3) {
+      color: violet;
+    }
+
+    #container > li:nth-child(n + 6) {
+      color: orange;
+    }
+
+    #container > li:first-child {
+      color: red;
+    }
+
+    #container > li:last-child {
+      color: purple;
+    }
+    
+    #container > li:nth-last-child(-n + 3) {
+      color: purple;
+    }
+
+
+  </style>
+
 </head>
 <body>
-  
+  <ul id="container">
+    <li>container의 자식 li태그</li>
+    <li>container의 자식 li태그</li>
+    <li>container의 자식 li태그</li>
+    <li>container의 자식 li태그</li>
+    <li>container의 자식 li태그</li>
+    <li>container의 자식 li태그</li>
+    <li>container의 자식 li태그</li>
+    <li>container의 자식 li태그</li>
+  </ul>
 </body>
 </html>
