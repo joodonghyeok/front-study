@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자식 자손 선택자</title>
+
+  <style>
+    /* 자손을 지정할 때는 띄어쓰고 하면 된다. */
+    #container span {
+      color: red;
+    }
+
+    /* 자식을 지정할 때는 > 꺽새를 사용하면 된다. */
+    #container > p {
+      color: coral;
+    }
+
+    /* 연습문제 */
+
+    ul > li {
+      color: green;
+    }
+
+    ol > li {
+      color: red;
+    }
+
+  </style>
+
+</head>
+<body>
+  <!-- <div id="container">
+    조상 div태그
+    <p>부모 p태그</p>
+    <div>
+      부모 div태그
+      <span>자손 span태그</span>
+      <strong>
+        자손 strong 태그
+        <a href="#">자손 a태그</a>
+      </strong>
+    </div>
+  </div> -->
+
+  <!--
+   ul태그의 li태그만 폰트 컬러를 green으로 변경
+   단, 자식 또는 자손 선택자를 이용해서 변경한다.
+    -->
+
+  <ol>  
+    <li>ol의 자식 li태그  </li>
+    <li>ol의 자식 li태그</li>
+    <li>ol의 자식 li태그</li>
+  </ol>
+
+  <ul>
+    <li>ul의 자식 li태그</li>
+    <li>ul의 자식 li태그</li>
+    <li>ul의 자식 li태그</li>
+  </ul>
+
+
+</body>
+</html>
