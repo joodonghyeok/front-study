@@ -1,5 +1,7 @@
 h1 {
   letter-spacing: 10px;
-  line-height: 100px;
+  line-height: 70px;
+  text-decoration: line-through;
+  white-space: nowrap;
 }
 

@@ -1,0 +1,27 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+}
+
+#box1 {
+  margin-top: 60px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+#box2 {
+  /* margin: 40px 10px 40px 10px; */
+  margin: 40px 10px;
+}
+
+#box3 {
+  /* margin: 100px; */
+  margin: 0 0 0 auto; /*  좌우면 auto는 적용이 가능하다 */
+  margin: 0 auto;
+} 
+
+#box4{
+  margin: 150px 0 0 0;
+}
