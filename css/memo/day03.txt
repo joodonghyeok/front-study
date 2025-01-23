@@ -1,0 +1,11 @@
+텍스트 스타일
+   - color : 텍스트 색상을 변경한다.
+   - letter-spacing : 자간, 문자 단위 간격
+   - word-spacing : 단어 사이 간격
+   - text-align : 텍스트의 정렬 ( left, right, center )
+   - line-height : 행간 (줄과 줄 사이 간격)
+   - text-indent : 첫 줄 들여쓰기
+   - text-decoration : 텍스트의 여러 효과 ( under-line, line-through )
+   - font-variant : 소문자를 더 작은 크기의 대문자로 변환
+   - text-shadow : 텍스트의 그림자 효과
+   - white-space : 띄어쓰기, 줄바꿈등을 어떻게 할지 여부
