@@ -1,0 +1,35 @@
+.parent {
+  width: 500px;
+  height: 500px;
+  border: solid 1px black;
+}
+
+.child {
+  width: 100dvw;
+  height: 50dvh;
+  background-color: orange;
+}
+
+#container {
+  border: solid 1px black;
+  width: calc(100% - 80px);
+  height: calc(100dvh - 200px);
+  margin: 0 auto;
+}
+
+#box {
+  /* width: 100%;
+  max-width: 1000px; */
+
+  /* 최대크기 */
+  /* width : min(100%, 1000px) */
+
+  width: 50%;
+  min-width: 300px;
+
+  /* 최소크기 */
+  /* width: max(50% ,300px); */
+  height: 200px;
+  background-color: purple;
+
+}
