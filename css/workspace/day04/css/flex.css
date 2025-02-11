@@ -1,0 +1,17 @@
+#flex-wrap {
+  display: flex;
+  /* 인라인 모드로 바뀜  좌에서 우(main axis)로 바뀜, 세로는 flex axis라고 함.*/
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  border: solid 1px black;
+}
+
+
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin: 4px;
+}

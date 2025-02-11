@@ -1,0 +1,16 @@
+#wrapper{
+  width: 200px;
+}
+
+#image-wrapper {
+  /* width: 6000px;
+  height: 4000px; */
+  background-image: url("../images/dog.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* 위에껄 아래로 줄여서 한 번에 코딩을 할 수 있다 */
+  background: url(../images/dog.jpg) no-repeat center 100% / 100%;
+  /* width height를 맞추는 거라 마지막 100퍼센트를 두 번 넣은 거라고 한다. */
+  padding-top: calc(100% / 3 * 2);
+}
