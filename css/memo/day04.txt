@@ -1,1 +1,31 @@
 태그를 사용하던 백그라운드롤 사용하던지 이미지를 넣는 2가지 방법에 대해서는 다 알아야한다.
+
+디스플레이 flex
+   - flexible box, flexbox라고 부른다. 요소의 크기와 순서를 유연하게 수정할 수 있으며,
+   한 줄에 요소를 배치하는 속성이다. 단, 요소의 크기보다 브라우저의 크기가 작아지면
+   한 줄에 꽉 차 보이도록 크기를 조절한다.
+
+   1) 자신이 가진 내용물의 width 만큼만 차지하게 되며, 
+   - width, height를 지정할 수 있다.(inline-block 속성과 동일하다.)
+
+   2) flex-direction : column, row, column-reverse, row-reverse
+   - flex container가 가지고 있는 자식을 어떻게 배치할 지 정하는 속성이다.
+   flex가 정렬되는 기본 방향을 메인 축(main axis)이라고 한다. 
+   flex가 정렬되는 반대 방향을 반대 축(cross axis)이라고 한다.
+
+   3) justify-content
+   - 메인 축의 정렬을 정하는 속성이다.
+   - space... : 자식간의 사이 간격을 조정하는 속성이다.   
+
+   4) align-items
+   - 반대 축의 정렬을 정하는 속성이다.
+
+   5) flex-wrap
+   - flex container가 가지고 있는 자식 요소의 크기가 부모보다 커질 때(넘칠 때)
+   어떻게 처리할 지 정하는 속성이다.
+
+   6) align-self
+   - 자식이 자기 자신의 위치를 정하는 속성
+   
+   7) order
+   - 자식의 순서를 결정한다. default 0

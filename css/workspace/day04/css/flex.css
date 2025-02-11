@@ -1,26 +1,20 @@
 #flex-wrap {
   display: flex;
-  /* main axis를 flex axis로 바꿈 */
+  flex-direction: row;
+  /* align-items: center; */
   /* flex-direction: column; */
-  /* 인라인 모드로 바뀜  좌에서 우(main axis)로 바뀜, 세로는 flex axis라고 함.*/
-  justify-content: baseline;
-  /* 메인 축 */
-  align-items: baseline;
-  /* flex axis축 */
-  height: 800px;
+  height: 400px;
   border: solid 1px black;
 }
 
-
-
 .item {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background-color: orange;
   margin: 4px;
 }
 
-.item:nth-child(1){
+/* .item:nth-child(1){
   order: 2;
 }
 .item:nth-child(2){
@@ -31,4 +25,72 @@
 }
 .item:nth-child(4){
   order: 4;
+} */
+
+.item:nth-child(6){
+  align-self: center;
 }
+
+/* row, column */
+/* gap: 4px 4px; */
+
+/* column-gap: 4px; */
+/* row-gap: 4px; */
+
+.box02-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  width: 104px;
+  border: solid 2px black;
+}
+
+/* flex02 */
+.box02 {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+}
+
+
+#layout {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  width: 374px;
+  padding: 20px;
+  height: 100dvh;
+}
+
+#layout header {
+  width: 100%;
+  height: 60px;
+}
+
+#layout header > .input-wrap {
+  display: flex;
+  align-items: center;
+  border: 1px solid #00c4c4;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0 12px;
+}
+
+#layout header input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+#layout main {
+  flex-grow: 1;
+}
+
+#layout footer {
+  width: 100%;
+  height: 60px;
+  background-color: gold;
+}
+

@@ -1,5 +1,7 @@
 #wrapper {
-  padding: auto;
+  /* 자식의 크기만큼 맞춰서 하기 위해서 inline을 쓰고 inline-flex를 사용하면 flex의 특징을 가지고 inline을 할 수 있다. */
+  display: inline-flex;
+  padding: 4px;
   border: solid 2px black;
 }
 
