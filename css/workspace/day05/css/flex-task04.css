@@ -1,0 +1,44 @@
+#container {
+  display: inline-flex;
+  padding: 20px;
+  border: solid 5px black;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 510px;
+  height: 530px;
+}
+
+.content-green {
+  width: 300px;
+  height: 200px;
+  background-color: green;
+}
+
+.content-yellow {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.content-pink {
+  width: 300px;
+  height: 320px;
+  background-color: pink;
+}
+
+.content-blue-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-blue {
+  width: 200px;
+  height: 100px;
+  background-color: blue;
+}
