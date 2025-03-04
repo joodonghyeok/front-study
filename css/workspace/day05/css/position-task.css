@@ -1,0 +1,17 @@
+#container {
+  position: relative;
+  width: 800%;
+}
+
+#container #bg {
+  width: 100%;
+}
+
+.cirlce {
+  width: 70px;
+  position: absolute;
+}
+
+#circle-01 {
+  bottom: 10px;
+}
