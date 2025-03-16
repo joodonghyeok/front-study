@@ -45,5 +45,23 @@ for(let i=0; i< 10; i++){
 }
 
 // 3) 0 ~ 10까지 5만 빼고 출력하기
+for(let i = 0; i <= 10; i ++){
+  if(i == 5){continue;}
+  console.log(i)
+}
 
 // 4) 012340123401234 출력하기
+let result4= "";
+for(let i =0; i < 3; i++){
+  for(let j =0; j < 5; j++){
+    result4 += j
+  }
+}
+
+console.log(result4)
+let result5 = ""
+for(let i = 0 ; i <15; i++){
+  result5 += i % 5
+}
+
+console.log(result5)
