@@ -92,9 +92,10 @@ const arr11 = arr8.splice(0, 5, "a", "b", "c", "d")
 
 // .sort()
 // 배열을 정렬 후 배열로 리턴
+const arr12 = [100, 150, 15, 200, 600, 700, 20, 40].sort((a, b) => a - b)
 // .reverse()
 // 배열의 순서를 반대로 뒤집어주고 배열을 리턴
-const arr12 = [100, 150, 15, 200, 600, 700, 20, 40].sort((a, b) => a - b).reverse()
+const arr13 = [100, 150, 15, 200, 600, 700, 20, 40].sort((a, b) => a - b).reverse()
 // console.log(arr12)
 
 // string, array
@@ -110,11 +111,11 @@ const arr12 = [100, 150, 15, 200, 600, 700, 20, 40].sort((a, b) => a - b).revers
 // console.log(datas1)
 
 let datas1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-// datas1.forEach((data/*, i, datas*/) => {
-//   console.log("data", data)
-//   // console.log("index", i)
-//   // console.log("datas", datas)
-// })
+datas1.forEach((data, i, datas) => {
+  console.log("data", data)
+  console.log("index", i)
+  console.log("datas", datas)
+})
 
 // datas1.forEach((_, i) => {
 //   console.log("index", i)
