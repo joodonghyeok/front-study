@@ -1,14 +1,14 @@
 // 실습 15분
 // array 고차함수 사용!
 // 1) 1~10까지 리스트에 담고 값을 하나씩 콘솔에 출력
-// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].forEach((data, index, datas) => { console.log(data); })
-// Array.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).forEach((data, index, datas) => { console.log(data); })
-// const li1 = []
-// for(let i = 1; i <= 10; i++){
-//   li1.push(i)
-// }
-// li1.forEach((data, index, datas) => { console.log(data); })
-// new Array(10).fill(0).map((data, i, datas) => i + 1).forEach((data) => { console.log(data) })
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].forEach((data, index, datas) => { console.log(data); })
+Array.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10).forEach((data, index, datas) => { console.log(data); })
+const li1 = []
+for(let i = 1; i <= 10; i++){
+  li1.push(i)
+}
+li1.forEach((data, index, datas) => { console.log(data); })
+new Array(10).fill(0).map((data, i, datas) => i + 1).forEach((data) => { console.log(data) })
 
 // 2) 1~20까지 리스트에 담고 짝수의 합을 구하고 콘솔에 출력
 // const li2 = new Array(20).fill(0)
@@ -32,15 +32,15 @@
 // console.log(total)
 
 // 3) 1~100까지를 리스트에 담고 5의 배수만 리스트에 필터한 후 누적합을 출력
-// let total2 = 0
-// new Array(100)
-//   .fill(0)
-//   .map((data, i) => i + 1)
-//   .filter((data) => data % 5 == 0)
-//   .forEach((data) => {
-//     total2 += data
-//   })
-// console.log(total2)
+let total2 = 0
+new Array(100)
+  .fill(0)
+  .map((data, i) => i + 1)
+  .filter((data) => data % 5 == 0)
+  .forEach((data) => {
+    total2 += data
+  })
+console.log(total2)
 
 // array 메서드 사용!
 // 4) 전화번호 파라미터로 받아서 파싱하기
