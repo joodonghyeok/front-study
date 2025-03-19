@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 선택자를 이용한 선택</title>
+</head>
+<body>
+  <div>
+    <h1>CSS 선택자를 이용한 선택</h1>
+    <p id="title">첫 번째 단락이에요!</p>
+    <ul>
+      <li class="odd">치킨</li>
+      <li class="even">집</li>
+      <li class="odd">자동차</li>
+      <li class="even">여자친구</li>
+      <li class="odd">남자친구</li>
+    </ul>
+  </div>
+</body>
+<script>
+  NodeList.prototype.filter = Array.prototype.filter;
+
+  const p = document.querySelector("#title")
+  const list = document.querySelectorAll("li")
+  console.log(p)  
+  p.innerHTML = "<strong>환영합니다😎</strong>"
+  // p.innerText = "<strong>환영합니다😎</strong>"
+  
+  console.log(list)
+  list.filter((li) => li.innerText.includes("친구")).forEach((li) => {
+    li.style.color = "blue";
+  })
+
+</script>
+</html>

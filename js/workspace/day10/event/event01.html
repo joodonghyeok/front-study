@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클릭 이벤트</title>
+</head>
+<body>
+  <div>
+    <h3>CSS 스타일 동적으로 변경</h3>
+    <hr />
+    <p>변경할 요소😎</p>
+    <button>스타일 변경하기!!</button>
+  </div>
+</body>
+<script>
+  const button = document.querySelector("button");
+  const p = document.querySelector("p");
+
+  button.addEventListener("click", (e) => {
+    // console.log(e)
+    with(p.style){
+      fontSize = "30px";
+      color = "pink";
+      border = "2px dashed magenta";
+      width = "200px"
+    }
+  })
+
+</script>
+</html>
