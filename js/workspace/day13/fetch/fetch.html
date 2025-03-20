@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>화면에 정보 가져와서 보여주기!</title>
+</head>
+<body>
+  <ul></ul>
+</body>
+<script>
+  const ul = document.querySelector("ul");
+
+  fetch("https://jsonplaceholder.typicode.com/todos")
+    .then((res) => {
+      // Ealry return
+      if(!res.ok) return console.error('데이터를 요청할 수 없습니다.');
+      return res.json()
+    })
+    .then((todos) => {
+      todos.forEach((todo, i) => {
+        console.log(todo)
+        ul.innerHTML += `<li>${todo.title}</li>`
+      })
+    })
+    .catch((err) => {
+      console.error(err)
+    })
+
+</script>
+</html>
