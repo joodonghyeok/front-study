@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>키 이벤트</title>
+</head>
+<body>
+  <input type="text" placeholder="사용자의 이름을 입력하세요.">
+  <p id="result"></p>
+</body>
+<script>
+  const input = document.querySelector("input");
+  const p = document.querySelector("#result")
+
+  input.addEventListener("keyup", (e) => {
+    console.log(e)
+    p.innerText = e.target.value
+  })
+
+</script>
+</html>

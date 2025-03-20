@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>key 이벤트 실습</title>
+</head>
+<body>
+  
+  <!-- 
+    13분
+    사용자가 "레드"라고 입력하고 확인을 누르면 글자색을 "red"로 만들기
+    사용자가 "블루"라고 입력하고 확인을 누르면 글자색을 "blue"로 만들기
+    확인을 눌렀을 때 위 조건이 둘 다 아니라면 글자색을 "black"로 만들기 
+    사용자가 "엔터" 키를 누르면 글자색을 "pink"로 만들기 
+  -->
+ 
+  <input type="text" >
+  <button>확인</button>
+</body>
+<script>
+  const input = document.querySelector("input")
+  const button = document.querySelector("button")
+  
+  input.addEventListener("keyup", (e) => {
+    if(e.key === "Enter"){
+      input.style.color = "pink"
+    }
+  })
+
+  button.addEventListener("click", (e) => {
+    let value = input.value;
+    if(value === "레드"){
+      input.style.color = "red"
+    }else if(value === "블루"){
+      input.style.color = "blue"
+    }else {
+      input.style.color = "black"
+    }
+  })
+
+</script>
+</html>
