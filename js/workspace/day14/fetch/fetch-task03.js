@@ -15,13 +15,13 @@ const getUsers = async () => {
   return users;
 }
 
-getUsers()
-  .then((users) => users.map((user, i, users) => user.email))
-  .then((emails) => emails.map ((email) => email.split("@")))
-  .then((names) => names.forEach((name) => {
-    console.log(`이름 : ${name}`)
-  }))
-  .catch((err) => console.error(err))
+// getUsers()
+//   .then((users) => users.map((user, i, users) => user.email))
+//   .then((emails) => emails.map ((email) => email.split("@")[0]))
+//   .then((names) => names.forEach((name) => {
+//     console.log(`이름 : ${name}`)
+//   }))
+//   .catch((err) => console.error(err))
 
 
 
@@ -29,3 +29,9 @@ getUsers()
 
 // 2. street을 가져와서 모두 거꾸로 출력하기
 // ["Kulas Light", ...] -> ["thgiL saluK", ...]
+
+getUsers()
+  .then((users) => users.map((user) => {return user.address.street}))
+  .then((streets) => streets.map((street) => street.split("").reverse().join("")))
+  .then((reversed) => reversed.forEach((rever) => console.log(rever)))
+  .catch((err) => console.error(err))
