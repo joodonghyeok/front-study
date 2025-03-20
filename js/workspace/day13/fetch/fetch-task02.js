@@ -12,7 +12,7 @@ const getTodos = async () => {
 }
 
 // getTodos()
-//   .then((todos) => todos.map((user) => user.title))
+  // .then((todos) => todos.map((user) => user.title))
 //   .then((titles) => titles.slice(0, 5))
 //   .then((titles) => {
 //     titles.forEach((title) => {
