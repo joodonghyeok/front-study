@@ -6,11 +6,29 @@ const animals = {
 }
 
 // 얕은 복사
-const animals2 = animals
+// const animals2 = animals
 
-animals2.dog = "점박이"
+// animals2.dog = "점박이"
 
-console.log(animals)
-console.log(animals2)
+// console.log(animals)
+// console.log(animals2)
 
 // 깊은 복사
+
+const animals3 = Object.assign({}, animals)
+animals3.dog = "점박이"
+
+console.log(animals)
+console.log(animals3)
+
+
+
+
+
+
+
+
+
+
+
+

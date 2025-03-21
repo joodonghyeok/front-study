@@ -1,0 +1,19 @@
+에러핸들링 ( Error Handling )
+  1)컴파일 오류
+  2)빌드 오류
+  3)런타임 오류
+
+try ~ catch문
+  try { 
+    예외가 발생할 수 있는 문장;
+  } catch(error){
+    예외 발생 시 실행할 문장;
+  } finally {
+    예외 발생 여부에 상관없이 무조건 실행할 문장;
+    catch로 잡지 못하는 오류들을 실행해야 할 때
+  }
+
+에러의 프로퍼티
+  1) name
+  2) message
+  3) stack
