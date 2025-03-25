@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery 실습</title>
+</head>
+<body>
+  <div>
+    <input type="text" name="name">
+    <p id="result"></p>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  // input태그에 작성된 이름 keyup, keydown, change 이벤트 중
+$("input[name='name']") .on("change", (e) => {
+  $("#result") .text(e.target.value)
+})
+
+  // 한 가지를 선택해서 가져온 이름을 실시간으로 p.#result에 출력하기
+</script>
+</html>

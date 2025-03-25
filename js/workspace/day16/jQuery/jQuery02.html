@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery기초02</title>
+</head>
+<body>
+  <ul class="car">
+    <li>페라리</li>
+    <li>롤스로이스</li>
+    <li>벤틀리</li>
+  </ul>
+  
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  // closest():부모에서 찾기
+  // find() : 자식에서 찾기
+  // prev() : 이전 요소 가져오기
+  // enxt() : 다음 요소 가져오기
+  const $list = $('li')
+  const $ul = $('ul')
+
+  // ul 태그의 자식 중에서 벤틀리 가져오기
+  // 1.jQ객체에서 하나의 객체를 접근하면 다시 모던 자바스크립트로 바뀐다.
+  // .eq(인덱스) : 해당 요소를 찾는다.
+  console.log($list.eq(0))
+
+  $ul.find("li").each((i, li) => {
+    if($(li).text("") === "벤틀리"){
+      console.log($(li))
+    }
+  })
+
+  // 값을 선택
+  console.log($list.eq(2).prev().text())
+  console.log($list.eq(0).prev().text())
+
+  // ul태그의 자식 중 첫 번쨰 자식 요소 삭제
+  $ul.find("li").first().remove()
+
+  // ul태그의 자식 중 마지막 자식 요소로 벤츠 추가
+  $ul.append("<li>벤츠</li>")
+
+  // ul태그의 기존 li를 모두 없애고 람보르기니만 남기기
+  $ul.html("<li>람보르기니</li>")
+
+</script>
+</html>
