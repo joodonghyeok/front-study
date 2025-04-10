@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 const Count = () => {
-  const [number, setNumber] = useState(0)
+  const [number, setNumber] = useState(0) 
+  // use가 들어간 건 훅함수라고도 부른다.
   
   
   const increase = () => {
