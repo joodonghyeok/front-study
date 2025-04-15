@@ -1,12 +1,10 @@
 import './App.css';
-
-import Foodcontainer from './docs/map/Foodcontainer';
-import Foods from './docs/map/Foods';
+import Name from './docs/ref/basic/Name';
 
 function App() {
   return (
     <div>
-      <Foodcontainer/>
+      <Name/>
     </div>
   );
 }
